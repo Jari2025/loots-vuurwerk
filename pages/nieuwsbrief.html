@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meld je aan voor de nieuwsbrief van Loots Vuurwerk en blijf op de hoogte van de nieuwste deals en acties.">
+    <title>Nieuwsbrief | Loots Vuurwerk</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand-wrap">
+            <a href="index.html" aria-label="Loots Vuurwerk — home">
+                <img src="../images/loots-logo.png" alt="Loots Vuurwerk logo" class="brand-logo">
+            </a>
+        </div>
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="has-submenu">
+                    <a href="index.html#category-showcase-title" aria-haspopup="true">Producten</a>
+                    <div class="product-dropdown">
+                        <ul class="product-menu" aria-label="Productcategorieën">
+                            <li class="has-side-menu">
+                                <details>
+                                    <summary>Knalvuurwerk</summary>
+                                </details>
+                                <ul class="product-menu side-menu" aria-label="Knalvuurwerk categorieën">
+                                    <li><a href="index.html#nitraten">Nitraten</a></li>
+                                    <li><a href="index.html#vlinders">Vlinders</a></li>
+                                    <li><a href="index.html#strijkers">Strijkers</a></li>
+                                    <li><a href="index.html#nitraatcakes">Nitraatcakes</a></li>
+                                    <li><a href="index.html#matten">Matten</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html#thunderkings">Thunderkings</a></li>
+                            <li><a href="index.html#potten">Potten</a></li>
+                            <li><a href="index.html#flowerbeds">Flowerbeds</a></li>
+                            <li><a href="index.html#pijlen">Pijlen</a></li>
+                            <li><a href="index.html#promo">PROMO</a></li>
+                            <li><a href="index.html#rook-fakkels">Rook &amp; Fakkels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="nieuwsbrief.html" aria-current="page">Nieuwsbrief</a></li>
+                <li><a href="openingstijden.html">Openingstijden</a></li>
+                <li><a href="informatie.html">Informatie</a></li>
+                <li><a href="veiligheid.html">Veiligheid</a></li>
+                <li><a href="index.html">Verlanglijst</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="newsletter-main">
+        <section class="newsletter-card" aria-labelledby="newsletter-title">
+            <div class="newsletter-copy">
+                <p class="newsletter-eyebrow">Loots Vuurwerk · Baarle-Hertog</p>
+                <h1 id="newsletter-title">De beste deals?<br><span>Die hoor je als eerste.</span></h1>
+                <p class="newsletter-intro">Schrijf je in voor onze nieuwsbrief en ontvang het laatste nieuws, acties en aanbiedingen van Loots Vuurwerk rechtstreeks in je inbox.</p>
+
+                <ul class="newsletter-benefits">
+                    <li><span aria-hidden="true">✦</span> Nieuwe acties en deals</li>
+                    <li><span aria-hidden="true">✦</span> Nieuws over ons assortiment</li>
+                    <li><span aria-hidden="true">✦</span> Afmelden kan altijd</li>
+                </ul>
+            </div>
+
+            <form class="newsletter-form" action="#" method="post">
+                <div class="newsletter-form-heading">
+                    <span class="newsletter-icon" aria-hidden="true">✉</span>
+                    <div>
+                        <h2>Blijf op de hoogte</h2>
+                        <p>Vul je e-mailadres in om je aan te melden.</p>
+                    </div>
+                </div>
+
+                <label for="newsletter-email">E-mailadres</label>
+                <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="jij@voorbeeld.nl" required>
+
+                <label class="newsletter-consent">
+                    <input type="checkbox" name="consent" required>
+                    <span>Ik geef toestemming om e-mails met nieuws, deals en acties te ontvangen.</span>
+                </label>
+
+                <button class="newsletter-submit" type="submit">Aanmelden voor de nieuwsbrief <span aria-hidden="true">→</span></button>
+                <p class="newsletter-notice" aria-live="polite">Het aanmeldformulier is klaar om te koppelen aan een nieuwsbriefdienst. Inzendingen worden nu nog niet opgeslagen of verstuurd.</p>
+            </form>
+        </section>
+    </main>
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/newsletter.js"></script>
+</body>
+
+</html>

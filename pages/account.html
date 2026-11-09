@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maak een Loots Vuurwerk-account aan of log in.">
+    <title>Account | Loots Vuurwerk</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand-wrap">
+            <a href="index.html" aria-label="Loots Vuurwerk — home">
+                <img src="../images/loots-logo.png" alt="Loots Vuurwerk logo" class="brand-logo">
+            </a>
+        </div>
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#category-showcase-title">Producten</a></li>
+                <li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
+                <li><a href="openingstijden.html">Openingstijden</a></li>
+                <li><a href="informatie.html">Informatie</a></li>
+                <li><a href="veiligheid.html">Veiligheid</a></li>
+                <li><a href="index.html">Verlanglijst</a></li>
+                <li><a href="account.html" aria-current="page">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="account-main">
+        <section class="account-card" aria-labelledby="account-title">
+            <p class="account-eyebrow">Loots Vuurwerk</p>
+            <h1 id="account-title">Jouw account</h1>
+            <p class="account-intro">Log in of maak een account aan om je gegevens bij Loots Vuurwerk te bewaren.</p>
+
+            <div class="account-view" id="account-auth">
+                <div class="account-tabs" role="tablist" aria-label="Accountopties">
+                    <button class="account-tab" id="login-tab" type="button" role="tab" aria-controls="login-form" aria-selected="true">Inloggen</button>
+                    <button class="account-tab" id="register-tab" type="button" role="tab" aria-controls="register-form" aria-selected="false">Account aanmaken</button>
+                </div>
+
+                <form class="account-form" id="login-form" autocomplete="on">
+                    <label for="login-email">E-mailadres</label>
+                    <input id="login-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                    <label for="login-password">Wachtwoord</label>
+                    <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+                    <button class="account-submit" type="submit">Inloggen</button>
+                </form>
+
+                <form class="account-form" id="register-form" autocomplete="on" hidden>
+                    <label for="register-name">Volledige naam</label>
+                    <input id="register-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                    <label for="register-email">E-mailadres</label>
+                    <input id="register-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                    <label for="register-phone">Telefoonnummer</label>
+                    <input id="register-phone" name="phone" type="tel" autocomplete="tel" maxlength="24" required>
+                    <label for="register-password">Wachtwoord (minimaal 12 tekens)</label>
+                    <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="72" required>
+                    <button class="account-submit" type="submit">Account aanmaken</button>
+                </form>
+            </div>
+
+            <section class="account-view" id="account-profile" aria-labelledby="profile-title" hidden>
+                <h2 id="profile-title">Je bent ingelogd</h2>
+                <dl class="account-details">
+                    <div><dt>Naam</dt><dd id="profile-name"></dd></div>
+                    <div><dt>E-mailadres</dt><dd id="profile-email"></dd></div>
+                    <div><dt>Telefoonnummer</dt><dd id="profile-phone"></dd></div>
+                </dl>
+                <button class="account-logout" id="logout-button" type="button">Uitloggen</button>
+            </section>
+
+            <p class="account-message" id="account-message" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+    <script src="../scripts/account.js"></script>
+</body>
+
+</html>

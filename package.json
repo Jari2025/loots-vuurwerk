@@ -1,0 +1,13 @@
+{
+  "name": "loots-vuurwerk",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.18.0"
+  }
+}
